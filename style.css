@@ -184,8 +184,17 @@ nav img {
 @media (max-width: 767px) {
     .team > .container > .row {
         flex-direction: column;
+        align-items: center;
+    }
+    .team > .container> .row img {
+        border-radius: 50%;
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        display: flex;
     }
 }
+
 .team > .container > .row {
     margin: 50px auto;
     display: flex;
@@ -209,7 +218,7 @@ nav img {
     color: grey;
 }
 
-.team > .container > .row .col-3 {
+.team > .container > .row .col-m-3, .team > .container > .row .col-s-6 {
     position: relative;
     padding: 0;
     margin-right: 2%;
@@ -229,18 +238,18 @@ nav img {
     text-transform: uppercase;
 }
 
-.container > .row > .col-3:hover [class*="position-overlay-"] {
+.container > .row > .col-m-3:hover [class*="position-overlay-"] {
     opacity: 1;
     transition: .3s ease-in-out;
 }
 
-.team > .container > .row .col-3:hover p {
+.team > .container > .row .col-m-3:hover p {
     transform: scale(1.2);
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.team > .container > .row .col-3:hover img {
+.team > .container > .row .col-m-3:hover img {
     opacity: 0.3;
 }
 
@@ -260,7 +269,7 @@ nav img {
     background-color: #F5F5F5;
     padding: 10px 0;
     max-height: 300px;
-    overflow: hidden; /* pokombinować z position absolute*/
+    overflow: hidden;
 }
 
 .side-image {
