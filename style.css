@@ -186,13 +186,6 @@ nav img {
         flex-direction: column;
         align-items: center;
     }
-    .team > .container> .row img {
-        border-radius: 50%;
-        width: 200px;
-        height: auto;
-        object-fit: cover;
-        display: flex;
-    }
 }
 
 .team > .container > .row {
@@ -307,7 +300,7 @@ nav img {
 
 /* -------------------------NUMBERS -------------------------*/
 
-.numbers .container .row .col-3 {
+.numbers .container .row .col-m-3 {
     text-transform: uppercase;
     text-align: center;
     padding: 10% 0;
