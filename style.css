@@ -180,14 +180,6 @@ nav img {
 
 /* -------------------------TEAM -------------------------*/
 
-
-@media (max-width: 767px) {
-    .team > .container > .row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .team > .container > .row {
     margin: 50px auto;
     display: flex;
@@ -211,7 +203,7 @@ nav img {
     color: grey;
 }
 
-.team > .container > .row .col-m-3, .team > .container > .row .col-s-6 {
+.team > .container > .row .col-m-3 {
     position: relative;
     padding: 0;
     margin-right: 2%;
@@ -548,6 +540,57 @@ footer .copyright {
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
 }
+
+
+/* --------------------RWD ------------------------*/
+
+@media (max-width: 767px) {
+
+    nav {
+        height: auto;
+    }
+
+    nav li, nav ul {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+      nav img {
+        display: none;
+    }
+
+    .slogan {
+        float: right;
+        min-width: 100px;
+        padding: 2% 10%;
+        margin-top: 40vh;
+        font-size: small;
+    }
+
+    .hero {
+        background-size: cover;
+        background-position: right; /* w ramach praktyki tak sobie */
+        height: 50vh;
+        min-height: 450px;
+    }
+
+    .team .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team img {
+        border-radius: 0; /* nie umiem zrobić tego border 50%, bo obrazki robia się jajowate*/
+    }
+
+    [class*="position-overlay-"] {
+        display: none;
+    }
+
+
+}
+
 
 
 
